@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naresh Yadav M | Developer Portfolio</title>
+    <style>
+        /* CSS Reset & Variables */
+        :root {
+            --primary: #2563eb;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #64748b;
+        }
+
+        * { margin: 0; 
+            padding: 0; 
+            box-sizing: 
+            border-box; 
+            font-family: 'Segoe UI', sans-serif; 
+        }
+        
+        /* Layout */
+        body { line-height: 1.6; 
+            color: var(--dark); 
+            background-color: var(--light); 
+        }
+
+        .container { 
+            max-width: 1100px; 
+            margin: 0 auto; 
+            padding: 0 20px; 
+        }
+
+        section { 
+            padding: 60px 0; 
+        }
+        
+        /* Header */
+        header { background: white;
+             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+              position: sticky;
+               top: 0; 
+               z-index: 100; 
+        }
+
+        nav { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            height: 70px; 
+        }
+
+        .logo { 
+            font-size: 1.5rem; 
+            font-weight: bold; 
+            color: var(--primary); 
+        }
+
+        .nav-links a { text-decoration: none; 
+            color: var(--dark); 
+            margin-left: 20px; 
+            font-weight: 500; 
+        }
+
+        .nav-links a:hover { 
+            color: var(--primary); 
+        }
+
+        /* Hero Section */
+        .hero { text-align: center;
+             padding: 100px 20px; 
+             background: linear-gradient(135deg, #e0f2fe 0%, #ffffff 100%); 
+        }
+
+        .hero h1 { 
+            font-size: 2.5rem; 
+            margin-bottom: 15px; 
+        }
+        
+        .hero h2 { 
+            font-size: 1.2rem; 
+            color: var(--gray); 
+            font-weight: normal; 
+            margin-bottom: 30px; 
+        }
+
+        .btn { 
+            display: inline-block; 
+            background: var(--primary); 
+            color: white; padding: 12px 30px; 
+            border-radius: 5px; 
+            text-decoration: none; 
+            font-weight: bold; 
+        }
+        
+        /* About & Skills */
+        .grid-2 { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; gap: 40px; 
+        }
+
+        .skill-tag { 
+            display: inline-block; 
+            background: #e2e8f0; 
+            padding: 8px 15px; 
+            border-radius: 20px; 
+            margin: 5px 5px 5px 0; 
+            font-weight: 500; 
+        }
+        
+        /* Projects */
+        .project-card { 
+            background: white; 
+            padding: 25px; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+            margin-bottom: 20px; 
+            border-left: 5px solid var(--primary); 
+        }
+
+        .project-title { 
+            font-size: 1.25rem; 
+            font-weight: bold; 
+            margin-bottom: 10px; 
+        }
+        
+        /* Contact */
+        .contact-box { 
+            text-align: center; 
+            background: var(--dark); 
+            color: white; 
+            padding: 50px 20px; 
+            border-radius: 10px; 
+        }
+
+        .contact-info { 
+            margin-top: 20px; 
+            font-size: 1.1rem; 
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .grid-2 { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Naresh Yadav.M</div>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Hi, I'm Naresh Yadav</h1>
+            <h2>Aspiring Web Developer | B.Tech Mechanical Graduate</h2>
+            <p style="max-width: 600px; margin: 0 auto 30px auto; color: var(--gray);">
+                Highly self-motivated with a proactive learning attitude. I am looking to utilize my skills in HTML5, CSS3, and Java to build responsive web solutions.
+            </p>
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container grid-2">
+            <div>
+                <h3 style="margin-bottom: 15px; font-size: 1.8rem;">About Me</h3>
+                <p style="margin-bottom: 15px;">
+                    I am a recent graduate from RGUKT RK Valley (IIIT Idupulapaya) with a 7.3 CGPA. While my academic background is in Mechanical Engineering, I have discovered a strong passion for software technologies.
+                </p>
+                <p>
+                    I pride myself on being a quick learner who can adapt to any environment. I maintain a positive attitude and am enthusiastic about teamwork.
+                </p>
+            </div>
+            <div id="skills">
+                <h3 style="margin-bottom: 15px; font-size: 1.8rem;">Technical Skills</h3>
+                <div>
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">SQL</span>
+                </div>
+                <h4 style="margin-top: 20px; margin-bottom: 10px;">Languages</h4>
+                <p>English, Telugu</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" style="background-color: #f1f5f9;">
+        <div class="container">
+            <h3 style="margin-bottom: 30px; font-size: 1.8rem; text-align: center;">Academic Projects</h3>
+            
+            <div class="project-card">
+                <div class="project-title">Project 1: Advanced Tyre Pressure Monitoring System</div>
+                <p><strong>Technologies:</strong> Embedded Systems, Logic Design</p>
+                <p style="margin-top: 10px;">
+                    Developed a TPMS utilizing an ESP32 microcontroller and BMP180 sensor. The system measures real-time atmospheric pressure and temperature to enhance vehicle safety and performance. This project honed my logic building and data handling skills.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">Project 2: Automated Air Conditioner Maintenance</div>
+                <p><strong>Technologies:</strong> Automation, System Design</p>
+                <p style="margin-top: 10px;">
+                    Designed a system to boost AC performance by tackling dust buildup using advanced filtration and automated cleaning techniques. Focused on creating a healthier indoor environment through automated solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="contact-box">
+                <h2>Let's Work Together</h2>
+                <p style="margin-top: 10px; opacity: 0.9;">I am currently available for immediate joining in Bangalore or Remote.</p>
+                
+                <div class="contact-info">
+                    <p>📞 <strong>Phone:</strong> +91 8374021719</p>
+                    <p>📧 <strong>Email:</strong> Nareshyadavmasagani@gmail.com</p>
+                    <p>📍 <strong>Location:</strong> Bangalore</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 20px; color: var(--gray); font-size: 0.9rem;">
+        <p>&copy; 2025 Naresh Yadav.M. Built with HTML & CSS.</p>
+    </footer>
+
+</body>
+</html>
