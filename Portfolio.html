@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naresh Yadav M | Developer Portfolio</title>
+    
+    <link rel="stylesheet" href="Portfolio.css">
+</head>
+<body>
+
+    <button id="backToTop" title="Go to top">↑</button>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo" onclick="window.scrollTo(0,0)">Naresh Yadav.M</div>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero appear">
+        <div class="container">
+            <h1>Hi, I'm Naresh Yadav</h1>
+            <h2>Aspiring Web Developer | B.Tech Mechanical Graduate</h2>
+            <p style="max-width: 600px; margin: 0 auto 30px auto; color: var(--gray);">
+                Highly self-motivated with a proactive learning attitude. I am looking to utilize my skills in HTML5, CSS3, and Java to build responsive web solutions.
+            </p>
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container grid-2">
+            <div>
+                <h3 style="margin-bottom: 15px; font-size: 1.8rem;">About Me</h3>
+                <p style="margin-bottom: 15px;">
+                    I am a recent graduate from RGUKT RK Valley (IIIT Idupulapaya) with a 7.3 CGPA. While my academic background is in Mechanical Engineering, I have discovered a strong passion for software technologies.
+                </p>
+            </div>
+            <div id="skills">
+                <h3 style="margin-bottom: 15px; font-size: 1.8rem;">Technical Skills</h3>
+                <div>
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" style="background-color: #f1f5f9;">
+        <div class="container">
+            <h3 style="margin-bottom: 30px; font-size: 1.8rem; text-align: center;">Academic Projects</h3>
+            <div class="project-card">
+                <div class="project-title"><strong>Project 1: Advanced Tyre Pressure Monitoring System</strong></div>
+                <p>Built with ESP32 and BMP180 sensors for real-time safety tracking.</p>
+            </div>
+            <div class="project-card">
+                <div class="project-title"><strong>Project 2: Automated Air Conditioner Maintenance</strong></div>
+                <p>Designed automated cleaning techniques to boost AC performance.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div style="text-align: center; background: var(--dark); color: white; padding: 50px 20px; border-radius: 10px;">
+                <h2>Let's Work Together</h2>
+                <p>📞 +91 8374021719 | 📧 Nareshyadavmasagani@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="Portfolio.js"></script>
+
+</body>
+</html>
